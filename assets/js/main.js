@@ -213,7 +213,7 @@ button.addEventListener("click", function (event) {
 });
 
 function sendDataToServer(formData) {
-  fetch("http://localhost:8080/project", {
+  fetch("https://backend-portfolio-9eys.onrender.com/project", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
