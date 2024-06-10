@@ -86,6 +86,7 @@ body.dark-theme {
 .nav__btns {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .change-theme {
@@ -98,6 +99,19 @@ body.dark-theme {
 .change-theme:hover {
   color: var(--first-color);
 }
+
+/*============ Button change lang ============*/
+.change-language {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-language:hover {
+  color: var(--first-color);
+}
+
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
