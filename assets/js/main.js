@@ -301,8 +301,9 @@ function setLanguage(lang){
       portfolio_section_title: "Portfolio",
       portfolio_section_subtitle: "Most recent work",
       portfolio_description1: "A personal blog made using NextJs, GraphQL, JavaScript thatposts on ways to improve your productivity. In the future Iplan to implement a study room system.",
-      portfolio_description2: "Web application that using a DALL-E API can generate images created by AI from texts. It was built with React, JavaScript, Cloudinary and the OpenAI API.",
-      portfolio_description3: "A simple finance control application. It is built using Next, Node.JS and Firebase. The focus of this application is to help the user organize themselves financially.",
+      portfolio_description2: "Web Application developed with Next.JS to handle UI, Liveblocks for realtime and styled features with TailwindCSS and shadcn/ui. LiveDocs is a clone of Google Docs.",
+      portfolio_description3: "Web application that using a DALL-E API can generate images created by AI from texts. It was built with React, JavaScript, Cloudinary and the OpenAI API.",
+      portfolio_description4: "A simple finance control application. It is built using Next, Node.JS and Firebase. The focus of this application is to help the user organize themselves financially.",
       project_section_title: "You have a new project",
       project_section_description: "Contact me and talk about your project.",
       contact_section_title: "Contact Me",
@@ -370,9 +371,10 @@ function setLanguage(lang){
       services_modal_database_text4: "Me mantenho atualizado com as tendências e avanços em tecnologias de banco de dados para fornecer soluções modernas e eficientes.",
       portfolio_section_title: "Portfólio",
       portfolio_section_subtitle: "Trabalhos mais recentes",
-      portfolio_description1: "Um blog pessoal feito usando NextJs, GraphQL, JavaScript que posta sobre maneiras de melhorar sua produtividade. No futuro pretendo implementar um sistema de sala de estudo.",
-      portfolio_description2: "Aplicativo web que usando a API do DALL-E pode gerar imagens criadas por IA a partir de textos. Foi construído com React, JavaScript, Cloudinary e API da OpenAI.",
-      portfolio_description3: "Um aplicativo simples de controle financeiro. Ele é construído usando Next, Node.JS e Firebase. O foco deste aplicativo é ajudar o usuário a se organizar financeiramente.",
+      portfolio_description1: "Um blog pessoal feito usando NextJs, GraphQL, JavaScript que posta sobre maneiras de melhorar sua produtividade. No futuro pretendo implementar um sistema de sala de estudos.",
+      portfolio_description2: "Aplicação Web construída com Next.JS para lidar com UI, Liveblocks para recursos em tempo real e estilização com TailwindCSS e shadcn/ui. LiveDocs é um clone do Google Docs.",
+      portfolio_description3: "Aplicativo web que usando a API do DALL-E pode gerar imagens criadas por IA a partir de textos. Foi construído com React, JavaScript, Cloudinary e API da OpenAI.",
+      portfolio_description4: "Um aplicativo simples de controle financeiro. Ele é construído usando Next, Node.JS e Firebase. O foco deste aplicativo é ajudar o usuário a se organizar financeiramente.",
       project_section_title: "Você tem um projeto em mente",
       project_section_description: "Me contate e fale sobre seu projeto",
       contact_section_title: "Contate me",
@@ -445,11 +447,10 @@ function setLanguage(lang){
   document.getElementsByClassName('services__modal-service-text')[11].textContent = content[lang].services_modal_database_text4;
   document.getElementsByClassName('section__title')[3].textContent = content[lang].portfolio_section_title;
   document.getElementsByClassName('section__subtitle')[3].textContent = content[lang].portfolio_section_subtitle;
-  document.getElementsByClassName('portfolio__description')[0].textContent = content[lang].portfolio_description3;
-  document.getElementsByClassName('portfolio__description')[1].textContent = content[lang].portfolio_description1;
-  document.getElementsByClassName('portfolio__description')[2].textContent = content[lang].portfolio_description2;
-  document.getElementsByClassName('portfolio__description')[3].textContent = content[lang].portfolio_description3;
-  document.getElementsByClassName('portfolio__description')[4].textContent = content[lang].portfolio_description1;
+  document.getElementById('portfolio-1').textContent = content[lang].portfolio_description1;
+  document.getElementById('portfolio-2').textContent = content[lang].portfolio_description2;
+  document.getElementById('portfolio-3').textContent = content[lang].portfolio_description3;
+  document.getElementById('portfolio-4').textContent = content[lang].portfolio_description4;
   document.querySelector('.project__title').textContent = content[lang].project_section_title;
   document.querySelector('.project__description').textContent = content[lang].project_section_description;
   document.getElementById('project-contact-button').firstChild.textContent = content[lang].contact_button;
